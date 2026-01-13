@@ -259,7 +259,7 @@ This project is created for educational purposes as part of a Coursera project.
 ## Contact
 
 For questions or feedback about this project:
-- GitHub: [\[Your GitHub Profile\]](https://github.com/rianrp)
+- GitHub: [\[Rianrp\]](https://github.com/rianrp)
 - Email: riansatro@gmail.com
 
 ---
