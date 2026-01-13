@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EurOrbit - European Weather Forecast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">EurOrbit</h1>
+            <h2 class="subtitle">European Weather Forecast</h2>
+            <p class="powered-by">Powered by <span class="api-badge">7Timer!</span></p>
+        </header>
+
+        <div class="city-selector">
+            <select id="citySelect" aria-label="Select a city">
+                <option value="52.52,13.41">Berlin, Germany</option>
+                <option value="48.86,2.35">Paris, France</option>
+                <option value="51.51,-0.13">London, UK</option>
+                <option value="40.42,-3.70">Madrid, Spain</option>
+                <option value="41.90,12.50">Rome, Italy</option>
+                <option value="52.37,4.90">Amsterdam, Netherlands</option>
+                <option value="50.85,4.35">Brussels, Belgium</option>
+                <option value="55.68,12.57">Copenhagen, Denmark</option>
+                <option value="59.91,10.75">Oslo, Norway</option>
+                <option value="59.33,18.07">Stockholm, Sweden</option>
+                <option value="60.17,24.94">Helsinki, Finland</option>
+                <option value="48.21,16.37">Vienna, Austria</option>
+                <option value="47.50,19.04">Budapest, Hungary</option>
+                <option value="50.08,14.44">Prague, Czech Republic</option>
+                <option value="52.23,21.01">Warsaw, Poland</option>
+                <option value="44.44,26.10">Bucharest, Romania</option>
+                <option value="42.70,23.32">Sofia, Bulgaria</option>
+                <option value="37.98,23.73">Athens, Greece</option>
+                <option value="41.33,19.82">Tirana, Albania</option>
+                <option value="38.72,-9.14">Lisbon, Portugal</option>
+                <option value="41.39,2.16">Barcelona, Spain</option>
+                <option value="43.30,-1.98">Bilbao, Basque Country, Spain</option>
+                <option value="51.90,-8.47">Cork, Ireland</option>
+                <option value="53.35,-6.26">Dublin, Ireland</option>
+                <option value="54.60,-5.93">Belfast, Northern Ireland, UK</option>
+                <option value="51.48,-3.18">Cardiff, Wales, UK</option>
+                <option value="55.95,-3.19">Edinburgh, Scotland, UK</option>
+                <option value="50.93,-1.40">Southampton, UK</option>
+                <option value="36.14,-5.35">Gibraltar, UK</option>
+                <option value="39.93,32.85" selected>Ankara, Turkey</option>
+                <option value="47.37,8.54">Zurich, Switzerland</option>
+                <option value="46.95,7.45">Bern, Switzerland</option>
+                <option value="50.45,30.52">Kyiv, Ukraine</option>
+                <option value="59.44,24.75">Tallinn, Estonia</option>
+                <option value="56.95,24.11">Riga, Latvia</option>
+                <option value="54.69,25.28">Vilnius, Lithuania</option>
+                <option value="45.42,10.99">Verona, Italy</option>
+                <option value="43.77,11.25">Florence, Italy</option>
+                <option value="50.08,8.24">Frankfurt, Germany</option>
+                <option value="53.55,10.00">Hamburg, Germany</option>
+                <option value="48.78,9.18">Stuttgart, Germany</option>
+                <option value="50.94,6.96">Cologne, Germany</option>
+            </select>
+        </div>
+
+        <div class="temperature-toggle">
+            <span id="temperatureUnit">Using Celsius</span>
+            <button id="tempToggleBtn" aria-label="Switch temperature unit">Switch to °F</button>
+        </div>
+
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Loading weather data...</p>
+        </div>
+
+        <div id="errorMessage" class="error-message hidden"></div>
+
+        <div id="forecastContainer" class="forecast-container">
+        </div>
+
+        <footer>
+            <p>&copy; Copyright 2026 EurOrbit</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
